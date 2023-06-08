@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+/* CSS files add styling rules to your content */
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@700&display=swap");
+
+body {
+  text-align: center;
+  padding: 0em;
+  margin: 0em;
+  font-family: "Work Sans", sans-serif;
+}
+
+.newsletter-container {
+  width:100%;
+  margin: 0 auto;
+  background-color: #fffefc;
+}
+
+/* Header nav */
+.newsletter-container header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+
+.categories-nav {
+  list-style-type: none;
+  margin: 0px auto;
+  padding: 20px 0 25px 0;
+  font-size: 0.6em;
+}
+
+.logo {
+  position: absolute;
+  left: 20px;
+  top: 0;
+  transform: translate(0, 50%);
+  width: 40px;
+}
+
+.categories-nav li {
+  padding: 0.8em;
+  font-size: 0.7rem;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.categories-nav a {
+  text-decoration: none;
+  color: rgb(191, 60, 56);
+  font-weight: 600;
+}
+
+.categories-nav a:hover {
+  text-decoration: underline;
+}
+
+/* Header */
+
+.main-header {
+  background-image: url("https://cdn.glitch.com/6e2916bb-c63e-4f04-98f5-45d101ff8e36%2Fniels-kehl-ZO8L_XiJtaQ-unsplash.jpg?v=1594038902486");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+  height: 400px;
+}
+
+.main-header h3 {
+  position: relative;
+  top: 20%;
+  color: white;
+  font-size: 1.3rem;
+}
+
+/* Main */
+
+main {
+  color: white;
+}
+
+.products {
+  height: 700px;
+  display: grid;
+  margin: 12px 0em;
+  grid-gap: 12px;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-areas:
+    "card1 card1 card2 card2 card3 card3"
+    "card1 card1 card2 card2 card3 card3"
+    "card1 card1 card2 card2 card3 card3"
+    "card4 card4 card4 card5 card5 card5"
+    "card4 card4 card4 card5 card5 card5";
+}
+
+.modelos-hombre {
+  grid-area: card1;
+  background-image: url("https://cdn.glitch.com/6e2916bb-c63e-4f04-98f5-45d101ff8e36%2Flisanto-VVi-U3xQlG4-unsplash.jpg?v=1594033808619");
+}
+
+.modelos-mujer {
+  grid-area: card2;
+  background-image: url("https://cdn.glitch.com/6e2916bb-c63e-4f04-98f5-45d101ff8e36%2Fcreaslim-SUUGUg7RXYY-unsplash.jpg?v=1594033710782");
+}
+
+.accesorios {
+  grid-area: card3;
+  background-image: url("https://cdn.glitch.com/6e2916bb-c63e-4f04-98f5-45d101ff8e36%2Fclick-images-_Jqnli0sZCA-unsplash.jpg?v=1594037523273");
+}
+
+.iconicos-hombre {
+  grid-area: card4;
+  background-image: url("https://cdn.glitch.com/6e2916bb-c63e-4f04-98f5-45d101ff8e36%2Fmaksim-larin-NOpsC3nWTzY-unsplash.jpg?v=1594038365735");
+}
+
+.iconicos-mujer {
+  grid-area: card5;
+  background-image: url("https://cdn.glitch.com/6e2916bb-c63e-4f04-98f5-45d101ff8e36%2Fmalvestida-magazine-DMl5gG0yWWY-unsplash.jpg?v=1594038281564");
+}
+
+.categorie-card {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+}
+
+.categorie-card button {
+  border: none;
+  background-color: white;
+  padding: 0.2rem 3rem;
+  font-size: 0.6rem;
+  font-weight: 500;
+}
+
+.categorie-card button:hover {
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.categorie-card h2 {
+  font-size: 1.4rem;
+  margin-bottom: 0.3em;
+}
+
+.tall-card {
+  padding-top: 2em;
+}
+
+.short-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.short-card h2 {
+  padding-bottom: 0.6em;
+}
+
+hr {
+  border: none;
+  border-top: 0.05rem #ecebea solid;
+  margin-left: 0.3em;
+  margin-right: 0.3em;
+}
+
+/* Email container */
+
+.email-container p {
+  color: black;
+  font-weight: bold;
+  font-size: 0.7rem;
+}
+
+.email-container {
+  padding: 20px 0px;
+}
+
+.email-icon {
+  width: 38px;
+  height: 36px;
+}
+
+.email-container button {
+  width: 20em;
+  background-color: rgb(191, 60, 56);
+  color: white;
+  padding: 0.5em;
+  text-transform: uppercase;
+  border: none;
+  font-size: 0.7rem;
+}
+
+.email-container button:hover {
+  cursor: pointer;
+  background-color: rgba(191, 60, 56, 0.8);
+}
+
+/* Footer */
+
+footer {
+  width:100%;
+  background-color: rgb(191, 60, 56);
+  text-align: start;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  padding: 2em;
+  line-height: 1.5em;
+  position: relative;
+  font-size: 0.55em;
+}
+
+footer ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+footer ul li:first-child a {
+  font-weight: bold;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+.icons-row img {
+  width: 20px;
+  height: 20px;
+  padding: 0.3em;
+  border-radius: 50px;
+}
+
+footer p {
+  color: white;
+  position: absolute;
+  bottom: 10px;
+  right: 130px;
+  font-size: 0.7em;
+}
+
+footer ul:nth-child(3) {
+  margin-right: 0.8em;
+}
+
+footer ul:nth-child(6) {
+  font-style: italic;
+}
+
+/*Responsive styles*/
+
+@media (max-width: 917px) {
+  footer {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  footer p {
+    color: white;
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+    font-size: 0.7em;
+  }
+}
+
+@media (max-width: 630px) {
+  .logo {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    width: 40px;
+  }
+
+  .products {
+    height: 700px;
+    margin: 12px 0em;
+    grid-gap: 12px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "card1 card2"
+      "card3 card3"
+      "card4 card5";
+  }
+}
+
+
+
+</style>
+</head>
+<body>
+<form action="shop"  method="post">
+<div class="newsletter-container">
+  <header>
+    <img src="https://cdn.glitch.com/6e2916bb-c63e-4f04-98f5-45d101ff8e36%2Fzapatos%20(1).png?v=1594046517011" alt="Brand Logo" class="logo" />
+    <nav>
+      <ul class="categories-nav">
+        <li><a href="#">Mujer</a></li>
+        <li><a href="#">Hombres</a></li>
+        <li><a href="#">Niños</a></li>
+        <li><a href="#">Accesorios</a></li>
+        <li><a href="#">Outlet</a></li>
+        <li><a href="#">Huellas</a></li>
+        <li><a href="#">F.A.Q</a></li>
+      </ul>
+    </nav>
+
+    <section class="main-header">
+      <h3>
+        Quédate en casa y #todoirábien
+      </h3>
+    </section>
+  </header>
+  <main>
+    <section class="products">
+      <div class="categorie-card modelos-hombre tall-card">
+        <h2>
+          MODELOS TOP
+        </h2>
+        <button>
+          HOMBRE
+        </button>
+      </div>
+      <div class="categorie-card modelos-mujer tall-card">
+        <h2>
+          MODELOS TOP
+        </h2>
+        <button>
+          MUJER
+        </button>
+      </div>
+      <div class="categorie-card accesorios tall-card">
+        <h2>
+          S/S20 ACCESORIOS
+        </h2>
+        <button>
+          ACCESORIOS
+        </button>
+      </div>
+      <div class="categorie-card iconicos-hombre short-card">
+        <h2>
+          MODELOS ICÓNICOS
+        </h2>
+        <button>
+          HOMBRE
+        </button>
+      </div>
+      <div class="categorie-card iconicos-mujer short-card">
+        <h2>
+          MODELOS ICÓNICOS
+        </h2>
+        <button>
+          MUJER
+        </button>
+      </div>
+    </section>
+    <hr />
+    <section class="email-container">
+      <img src="https://cdn.glitch.com/6e2916bb-c63e-4f04-98f5-45d101ff8e36%2Fmail.png" alt="email" class="email-icon" />
+      <p>Recibe en tu email las últimas novedades y promociones</p>
+      <button type="buttom">Unirse</button>
+    </section>
+  </main>
+  <footer>
+    <ul>
+      <li><a href="#">Sobre</a></li>
+      <li><a href="#">Universo</a></li>
+      <li><a href="#">Huellas</a></li>
+      <li><a href="#">Blog</a></li>
+      <li><a href="#">Fabricacion</a></li>
+    </ul>
+    <ul>
+      <li><a href="#">Guía de compra</a></li>
+      <li><a href="#">Ventajas</a></li>
+      <li><a href="#">Como hacer un pedido</a></li>
+      <li><a href="#">Cambio y devoluciones</a></li>
+      <li><a href="#">Guía de tallas</a></li>
+      <li><a href="#">FAQ´s</a></li>
+    </ul>
+    <ul>
+      <li><a href="#">Politicas</a></li>
+      <li><a href="#">Condiciones Generales</a></li>
+      <li><a href="#">Politica de Privacidad</a></li>
+      <li><a href="#">Politica de Cookies</a></li>
+      <li><a href="#">Condiciones Generales de Compra</a></li>
+      <li><a href="#">RSC</a></li>
+      <li><a href="#">Ahorro y Eficiencia Energetica</a></li>
+      <li><a href="#">Ahorro y Eficiencia en la industria</a></li>
+      <li><a href="#">Project I + D</a></li>
+    </ul>
+    <ul>
+      <li><a href="#">Contacto</a></li>
+      <li><a href="#">Atención al cliente</a></li>
+      <li><a href="#">Trabaja con nosotros</a></li>
+      <li><a href="#">Devolución de pedido</a></li>
+    </ul>
+
+    <ul>
+      <li><a href="#">¿Te ayudamos?</a></li>
+      <li><a href="#">900 858 989</a></li>
+      <li><a href="#">Selector de País</a></li>
+      <li><a href="#">España | ES</a></li>
+    </ul>
+    <ul>
+      <li class="icons-row">
+        <img src="https://cdn.glitch.com/6e2916bb-c63e-4f04-98f5-45d101ff8e36%2Ffacebook.png?v=1594044741353" alt="" />
+        <img src="https://cdn.glitch.com/6e2916bb-c63e-4f04-98f5-45d101ff8e36%2Finstagram-xl.png?v=1594044743924" alt="" />
+        <img src="https://cdn.glitch.com/6e2916bb-c63e-4f04-98f5-45d101ff8e36%2Ftwitter-3-xl.png?v=1594044896892" alt="" />
+        <img src="https://cdn.glitch.com/6e2916bb-c63e-4f04-98f5-45d101ff8e36%2Ffacebook.png?v=1594044741353" alt="" />
+      </li>
+      <li><a href="#">Valoracion de clientes:</a></li>
+      <li><a href="#">4.5/5</a></li>
+      <li><a href="#">&#9733;&#9733;&#9733;&#9733;&#9733;</a></li>
+      <li><a href="#">1145 opiniones</a></li>
+    </ul>
+    <p>
+      Nosotros 2019. Todos los derechos reservados
+    </p>
+  </footer>
+</div>
+</form>
+</body>
+</html>
